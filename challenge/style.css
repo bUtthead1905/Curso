@@ -1,0 +1,115 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #FE652B;
+    --color-button-hover: #E55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+    background: var(--color-secondary);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-white);
+}
+
+.header-banner img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: var(--color-primary);
+    margin: 15px 0;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+}
+
+.button-add {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+}
+
+.name-list {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.name-list li {
+    background: var(--color-tertiary);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-draw {
+    width: 100%;
+    padding: 12px;
+    background: var(--color-button);
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.button-draw:hover {
+    background: var(--color-button-hover);
+}
